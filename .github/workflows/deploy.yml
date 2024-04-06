@@ -20,6 +20,9 @@ jobs:
 
     - name: Install modules
       run: npm install wrangler@latest
+      
+    - name: Install wrangler
+      run: npm install -g wrangler@latest  # Installs wrangler globally
 
     - name: Build
       run: npx wrangler build
